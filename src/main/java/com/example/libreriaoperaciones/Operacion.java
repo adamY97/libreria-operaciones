@@ -24,8 +24,8 @@ public class Operacion {
 		int b = (int)(Math.random()*10+1);
 		
 		double resultado = 0;
-		int mayor = 0;
-		int menor = 0;
+		double mayor = 0;
+		double menor = 0;
 
 		
 		if(a>b) {
@@ -58,7 +58,7 @@ public class Operacion {
 			break;
 		}
 		
-		String c = "El resultado de la operación " + operacion + " (entre "+ mayor + " y " + menor + ") es:" + resultado;
+		String c = "El resultado de la operación " + operacion + " (entre "+ mayor + " y " + menor + ") es: " + resultado;
 		return c;
 	}
 	
