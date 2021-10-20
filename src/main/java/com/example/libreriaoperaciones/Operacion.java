@@ -17,12 +17,16 @@ public class Operacion {
 		this.operacion = operacion;
 	}
 	
-	
-	public double operacionMatematica(int a, int b) {
+
+	public String operacionMatematica() {
 		
+		int a = (int)(Math.random()*10+1);
+		int b = (int)(Math.random()*10+1);
+		
+		double resultado = 0;
 		int mayor = 0;
 		int menor = 0;
-		double resultado = 0;
+
 		
 		if(a>b) {
 			mayor = a;
@@ -54,8 +58,8 @@ public class Operacion {
 			break;
 		}
 		
-		System.out.println("El resultado de la operación " + operacion + " (entre "+ mayor + " y " + menor + ") es:");
-		return resultado;
+		String c = "El resultado de la operación " + operacion + " (entre "+ mayor + " y " + menor + ") es:" + resultado;
+		return c;
 	}
 	
 	
