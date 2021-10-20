@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "operaciones.resultado",
+      "type": "com.example.libreriaoperaciones.clases.OperacionProperties",
+      "sourceType": "com.example.libreriaoperaciones.clases.OperacionProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "operaciones.resultado.operacion",
+      "type": "java.lang.String",
+      "sourceType": "com.example.libreriaoperaciones.clases.OperacionProperties"
+    }
+  ],
+  "hints": []
+}
