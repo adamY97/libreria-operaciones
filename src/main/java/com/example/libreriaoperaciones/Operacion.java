@@ -4,15 +4,6 @@ public class Operacion {
 	
 	private String operacion;
 	
-	public Operacion (String operacion) {
-		this.operacion = operacion;
-	}
-	
-	public Operacion() {
-		this.operacion = "";
-	}
-	
-	
 	public String getOperacion() {
 		return operacion;
 	}
@@ -20,6 +11,12 @@ public class Operacion {
 	public void setOperacion(String operacion) {
 		this.operacion = operacion;
 	}
+	
+	
+	public Operacion (String operacion) {
+		this.operacion = operacion;
+	}
+	
 	
 	public double operacionMatematica(int a, int b) {
 		
@@ -35,8 +32,8 @@ public class Operacion {
 			menor = a;
 		}
 		
-		switch (this.operacion) {
-		case "Multiplicación":
+		switch (operacion) {
+		case "Multiplicacion":
 			resultado = mayor * menor;
 			break;
 			
@@ -57,7 +54,7 @@ public class Operacion {
 			break;
 		}
 		
-		System.out.println("El resultado de la operación " + this.operacion + " (entre "+ mayor + " y " + menor + ") es:");
+		System.out.println("El resultado de la operación " + operacion + " (entre "+ mayor + " y " + menor + ") es:");
 		return resultado;
 	}
 	
